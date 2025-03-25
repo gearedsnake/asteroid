@@ -429,33 +429,33 @@ public class Modules extends System<Modules> {
         add(new AutoTool());
         add(new FakePlayer());
         add(new NoInteract());
-        add(new NoMiningTrace());
-        add(new Portals());
+        addDisabled(new NoMiningTrace());
+        addDisabled(new Portals());
         add(new Rotation());
     }
 
     private void initRender() {
         add(new BetterTooltips());
-        addCheat(new BlockESP());
-        add(new BlockSelection());
+        addDisabled(new BlockESP());
+        addDisabled(new BlockSelection());
         add(new Breadcrumbs());
         add(new BreakIndicators());
-        addCheat(new CameraTweaks());
-        addCheat(new Freecam());
-        add(new FreeLook());
+        addDisabled(new CameraTweaks());
+        addDisabled(new Freecam());
+        addDisabled(new FreeLook());
         add(new Fullbright());
         add(new HandView());
         add(new ItemHighlight());
         add(new LightOverlay());
         add(new Marker());
-        add(new NoRender());
-        addCheat(new Tracers());
-        add(new Trail());
-        add(new UnfocusedCPU());
+        addDisabled(new NoRender());
+        addDisabled(new Tracers());
+        addDisabled(new Trail());
+        addDisabled(new UnfocusedCPU());
         add(new WaypointsModule());
-        addCheat(new Xray());
+        addDisabled(new Xray());
         add(new Zoom());
-        add(new Blur());
+        addDisabled(new Blur());
         add(new BetterTab());
     }
 
@@ -464,7 +464,7 @@ public class Modules extends System<Modules> {
         add(new AutoReconnect());
         add(new AutoRespawn());
         add(new BetterChat());
-        add(new DiscordPresence());
+        addDisabled(new DiscordPresence());
         add(new SoundBlocker());
         add(new InventoryTweaks());
         add(new Ambience());
