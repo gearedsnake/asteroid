@@ -421,7 +421,7 @@ public class Modules extends System<Modules> {
     private void initRender() {
         add(new BetterTab());
         add(new BetterTooltips());
-        addCheat(new BlockESP());
+        addDisabled(new BlockESP());
         addDisabled(new BlockSelection());
         add(new BossStack());
         addDisabled(new Breadcrumbs());
