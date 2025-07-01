@@ -410,11 +410,11 @@ public class Modules extends System<Modules> {
 
     private void initPlayer() {
         add(new AutoReplenish());
-        add(new AutoTool());
-        add(new FakePlayer());
+        addDisabled(new AutoTool());
+        addDisabled(new FakePlayer());
         add(new NoInteract());
-        add(new NoMiningTrace());
-        add(new Portals());
+        addDisabled(new NoMiningTrace());
+        addDisabled(new Portals());
         add(new Rotation());
     }
 
@@ -422,26 +422,26 @@ public class Modules extends System<Modules> {
         add(new BetterTab());
         add(new BetterTooltips());
         addCheat(new BlockESP());
-        add(new BlockSelection());
+        addDisabled(new BlockSelection());
         add(new BossStack());
-        add(new Breadcrumbs());
-        add(new BreakIndicators());
-        addCheat(new CameraTweaks());
-        addCheat(new Freecam());
-        add(new FreeLook());
+        addDisabled(new Breadcrumbs());
+        addDisabled(new BreakIndicators());
+        addDisabled(new CameraTweaks());
+        addDisabled(new Freecam());
+        addDisabled(new FreeLook());
         add(new Fullbright());
         add(new HandView());
         add(new ItemHighlight());
         add(new LightOverlay());
         add(new Marker());
         add(new NoRender());
-        addCheat(new Tracers());
-        add(new Trail());
-        add(new UnfocusedCPU());
+        addDisabled(new Tracers());
+        addDisabled(new Trail());
+        addDisabled(new UnfocusedCPU());
         add(new WaypointsModule());
-        addCheat(new Xray());
+        addDisabled(new Xray());
         add(new Zoom());
-        add(new Blur());
+        addDisabled(new Blur());
     }
 
     private void initMisc() {
